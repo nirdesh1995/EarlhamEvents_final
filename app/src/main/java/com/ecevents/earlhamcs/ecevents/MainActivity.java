@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -104,6 +105,20 @@ public class MainActivity extends AppCompatActivity {
                     json_string = result;
                 }
 
+            }
+            public void parseJSON( View view){
+                if (json_string==null){
+                    Toast.makeText(getApplicationContext(), "First get JSOn", Toast.LENGTH_LONG).show();
+
+                }
+                else
+                {
+                    Intent intent = new Intent(this, DisplayListView.class);
+                    intent.putExtra("json_data", json_string);
+                    startActivity(intent);
+
+
+                }
             }
         });
 
