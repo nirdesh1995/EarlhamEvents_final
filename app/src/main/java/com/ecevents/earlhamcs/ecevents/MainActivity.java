@@ -103,9 +103,16 @@ public class MainActivity extends AppCompatActivity {
                     TextView textView = (TextView) findViewById(R.id.textview);
                     textView.setText(result);
                     json_string = result;
+
+                    Intent intent = new Intent(this, DisplayListView.class);
+                    intent.putExtra("json_data", json_string);
+                    startActivity(intent);
+
                 }
 
             }
+
+
             public void parseJSON( View view){
                 if (json_string==null){
                     Toast.makeText(getApplicationContext(), "First get JSOn", Toast.LENGTH_LONG).show();
