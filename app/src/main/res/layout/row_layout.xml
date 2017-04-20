@@ -1,110 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:id="@+id/event_name"
-    android:layout_alignParentLeft="true"
-    android:text="ALI HARAM"
-    android:gravity="center"
-    android:textAppearance="?android:textAppearanceLarge"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="150dp">
 
-    />
+
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:id="@+id/tx_event_id"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
-
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
         android:id="@+id/tx_title"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:id="@+id/tx_location"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
         android:gravity="center"
+        android:text="Title"
         android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp" />
 
-        />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
         android:id="@+id/tx_c_person"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        />
+
+        android:gravity="center"
+        android:text="Contact Person"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/tx_title"
+        android:layout_alignParentStart="true" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
         android:id="@+id/tx_email"
-        android:layout_alignParentLeft="true"
-        android:text="email"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:id="@+id/tx_odate"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        />
+        android:gravity="center"
+
+        android:text="Email"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_below="@+id/tx_c_person"
+        android:layout_alignParentStart="true"  />
+
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
         android:id="@+id/tx_date"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:text="Date"
         android:textAppearance="?android:textAppearanceLarge"
-
+        android:textSize="15dp"
+        android:layout_below="@+id/tx_email"
+        android:layout_alignParentStart="true"
         />
+
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
         android:id="@+id/tx_time"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:text="Time"
         android:textAppearance="?android:textAppearanceLarge"
-
+        android:textSize="15dp"
+        android:layout_below="@+id/tx_date"
+        android:layout_alignParentStart="true"
         />
+
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:id="@+id/tx_description"
-        android:layout_alignParentLeft="true"
-        android:text="ALI HARAM"
+        android:id="@+id/tx_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Location"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_below="@+id/tx_time"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/tx_event_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tx_odate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/tx_event_id"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tx_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/tx_location"
+        android:layout_alignParentStart="true"
+        android:background="#A9A9A9" />
 
 
-
-    />
-
-        />
 </RelativeLayout>

@@ -32,11 +32,17 @@ public class DisplayListView extends AppCompatActivity {
 
         try {
             jsonObject = new JSONObject(json_string);
-            jsonArray = new JSONObject(json_string).getJSONArray("event");
+
+            jsonArray = jsonObject.getJSONArray("event");
+
+            //jsonArray = new JSONObject(json_string).getJSONArray("event");
             int count = 0;
             String event_id, title,location ,c_person,email,odate ,date,time,description;
 
-            while(count<jsonObject.length())
+
+
+
+            while(count<jsonArray.length())
             {
                 JSONObject JO = jsonArray.getJSONObject(count);
 
@@ -52,6 +58,7 @@ public class DisplayListView extends AppCompatActivity {
 
                 Queries queries = new Queries(event_id, title, location, c_person, email, odate, date, time, description );
                 queriesAdapter.add(queries);
+
                 count++;
             }
         }
@@ -61,3 +68,4 @@ public class DisplayListView extends AppCompatActivity {
 
     }
 }
+

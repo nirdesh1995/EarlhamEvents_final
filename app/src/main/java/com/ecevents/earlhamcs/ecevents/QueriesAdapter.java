@@ -78,7 +78,7 @@ public class QueriesAdapter extends ArrayAdapter
         queriesHolder.tx_email.setText(queries.getEmail());
         queriesHolder.tx_odate.setText(queries.getOdate());
         queriesHolder.tx_date.setText(queries.getDate());
-        queriesHolder.tx_time.setText(queries.getTitle());
+        queriesHolder.tx_time.setText(queries.getTime());
         queriesHolder.tx_description.setText(queries.getDescription());
 
 
